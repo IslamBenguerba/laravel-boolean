@@ -15,15 +15,18 @@ return new class extends Migration
             $table->id();
             $table->string('idDrink')->nullable();
             $table->string('strDrink');
-            $table->string('strDescrizione')->nullable();
-            $table->string('strCategorstry')->nullable();
+            $table->string('strDrinkAlternate')->nullable();
+            $table->string('strTags')->nullable();
+            $table->string('strVideo')->nullable();
+            $table->string('strCategory')->nullable();
             $table->string('strIBA')->nullable();
-            $table->string('strGlastrss')->nullable();
-            $table->string('strInstructions')->nullable();
-            $table->string('strInstructionsES')->nullable();
-            $table->string('strInstructionsDE')->nullable();
-            $table->string('strInstructionsFR')->nullable();
-            $table->string('strInstructionsIT')->nullable();
+            $table->string('strAlcoholic')->nullable();
+            $table->string('strGlass')->nullable();
+            $table->text('strInstructions')->nullable();
+            $table->text('strInstructionsES')->nullable();
+            $table->text('strInstructionsDE')->nullable();
+            $table->text('strInstructionsFR')->nullable();
+            $table->text('strInstructionsIT')->nullable();
             $table->string('strDrinkThumb')->nullable();
             for ($i = 1; $i < 16; $i++) {
                 $table->string('strIngredient'.$i)->nullable();
