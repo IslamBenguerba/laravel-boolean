@@ -11,8 +11,6 @@ class CocktailController extends Controller
     public function index(){
         //recupero i dati dalla tabella
         $cocktails = Cocktail::all();
-        dd($cocktails);
-
 
         //ritorno il json con i dati
         return response()->json($cocktails);
